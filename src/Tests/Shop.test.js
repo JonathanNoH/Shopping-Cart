@@ -9,9 +9,4 @@ describe('Shop Component', () => {
     const { container } = render(<Shop />);
     expect(container).toMatchSnapshot();
   })
-
-  it('has heading', () => {
-    render(<Shop />);
-    expect(screen.getByRole("heading").textContent).toMatch(/Shop/i);
-  });
 });

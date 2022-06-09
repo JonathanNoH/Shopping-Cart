@@ -2,8 +2,18 @@
 
 exports[`Shop Component renders shop 1`] = `
 <div>
-  <h1>
-    Shop
-  </h1>
+  <div>
+    <h1>
+      Shop
+    </h1>
+    <div>
+      <h3>
+        Apple
+      </h3>
+      <div>
+        Missing Description
+      </div>
+    </div>
+  </div>
 </div>
 `;
