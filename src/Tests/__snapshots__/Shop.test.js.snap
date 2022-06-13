@@ -10,9 +10,17 @@ exports[`Shop Component renders shop 1`] = `
       <h3>
         Apple
       </h3>
-      <div>
-        Missing Description
+      <div
+        role="Apple-description"
+      >
+        fruit
       </div>
+      <button>
+        Add To Cart
+      </button>
+      <div
+        role="Apple-in-cart"
+      />
     </div>
   </div>
 </div>
