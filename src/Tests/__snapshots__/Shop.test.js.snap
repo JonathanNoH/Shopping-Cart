@@ -15,12 +15,16 @@ exports[`Shop Component renders shop 1`] = `
       >
         fruit
       </div>
-      <button>
+      <button
+        aria-label="Add Apple To Cart"
+      >
         Add To Cart
       </button>
       <div
         role="Apple-in-cart"
-      />
+      >
+        0
+      </div>
     </div>
   </div>
 </div>
