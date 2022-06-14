@@ -8,7 +8,9 @@ exports[`Shop Component renders shop 1`] = `
     </h1>
     <div>
       <div>
-        Your cart is empty
+        <button>
+          Cart
+        </button>
       </div>
     </div>
     <div>

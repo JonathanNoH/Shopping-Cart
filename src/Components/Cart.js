@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Cart = ({cart}) => {
+  const [toggleCartDisplay, setToggleCartDisplay] = useState(false);
+  const handleClick = () => {
+    setToggleCartDisplay(prevState => !prevState);
+  }
+  
   let cartArray;
-
   cartArray = Object.entries(cart).map((item) => {
     return (
     <li key={item[0].toString()}>
@@ -14,7 +18,11 @@ const Cart = ({cart}) => {
 
   return (
     <div>
-      {(cartArray.length > 0) ? cartArray : "Your cart is empty"}
+      <button onClick={handleClick}>Cart</button>
+      {toggleCartDisplay && 
+      ((cartArray.length > 0) ? 
+        cartArray : "Your cart is empty")
+      }
     </div>
   )
 }

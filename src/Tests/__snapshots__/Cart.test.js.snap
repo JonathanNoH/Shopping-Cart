@@ -3,7 +3,9 @@
 exports[`Cart Component renders cart 1`] = `
 <div>
   <div>
-    Your cart is empty
+    <button>
+      Cart
+    </button>
   </div>
 </div>
 `;
