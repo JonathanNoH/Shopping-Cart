@@ -3,9 +3,14 @@
 exports[`Cart Component renders cart 1`] = `
 <div>
   <div>
-    <button>
-      Cart
-    </button>
+    <div>
+      <button>
+        Cart
+      </button>
+      <span>
+        (0)
+      </span>
+    </div>
   </div>
 </div>
 `;

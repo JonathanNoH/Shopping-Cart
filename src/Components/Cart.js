@@ -16,9 +16,16 @@ const Cart = ({cart}) => {
     )
   })
 
+  const cartTotal = Object.values(cart).reduce(
+    (previous, current) => previous + current, 0
+  );
+
   return (
     <div>
-      <button onClick={handleClick}>Cart</button>
+      <div>
+        <button onClick={handleClick}>Cart</button>
+        <span>{"("+ cartTotal +")"}</span>  
+      </div>
       {toggleCartDisplay && 
       ((cartArray.length > 0) ? 
         cartArray : "Your cart is empty")

@@ -45,3 +45,14 @@ it("button toggles viewing cart", () => {
   userEvent.click(button);
   expect(screen.queryByText(/Your cart is empty/)).not.toBeInTheDocument();
 })
+
+describe("cart total", () => {
+  it("displays cart total for empty cart", () => {
+    render(<Cart cart={{}} />)
+    expect(screen.getByText(/0/)).toBeInTheDocument();
+  })
+  it("displays cart total for nonempty cart", () => {
+    render(<Cart cart={{Apple: 12, Orange: 6}}/>);
+    expect(screen.getByText(/18/)).toBeInTheDocument();
+  })
+})
