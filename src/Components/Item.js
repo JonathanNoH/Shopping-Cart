@@ -18,7 +18,7 @@ const Item = ({title, description, amount, onAdd}) => {
   return (
     <div>
       <h3>{title || "Missing Title"}</h3>
-      <div role={title + "-description"}>{description || "Missing Description"}</div>
+      <div>{description || "Missing Description"}</div>
       <form>
         <label htmlFor={`amount-to-add-${title}`}>{title}s to add: </label>
         <input
@@ -32,7 +32,7 @@ const Item = ({title, description, amount, onAdd}) => {
         />
         <button type="submit" onClick={clickHandler} aria-label={`Add ${title} To Cart`}>Add To Cart</button>
       </form>
-      <div><span role={title + "-in-cart"}>{amount}</span> in cart</div>
+      <div><span data-testid={`${title}-test-amount`}>{amount}</span> in cart</div>
     </div>
   )
 }

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Item from "./Item";
+import Cart from "./Cart";
 
 const Shop = () => {
   const [cart, setCart] = useState({});
@@ -15,10 +16,19 @@ const Shop = () => {
   return (
     <div>
       <h1>Shop</h1>
+      <div>
+        <Cart cart={cart}/>
+      </div>
       <Item 
         title="Apple" 
         description="fruit" 
         amount={('Apple' in cart) ? cart.Apple : 0 }
+        onAdd={addItemToCart}
+      />
+      <Item 
+        title="Orange"
+        description="fruit"
+        amount={('Orange' in cart) ? cart.Orange : 0}
         onAdd={addItemToCart}
       />
     </div>

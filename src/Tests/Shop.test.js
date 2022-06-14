@@ -3,17 +3,17 @@ import { render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom";  // optional
 import userEvent from "@testing-library/user-event";
 import Shop from "../Components/Shop";
-/*
-jest.mock("./Item", () => ({title, description, amount, onAdd}) => {
+
+/*jest.mock("./Item", () => ({title, description, amount, onAdd}) => {
   const clickHandler = () => onAdd(title, amount);
   <div>
     <h3>{title || "Missing Title"}</h3>
-    <div role={title + "-description"}>{description || "Missing Description"}</div>
+    <div data-testid={'test-description'}>{description || "Missing Description"}</div>
     <button onClick={clickHandler} aria-label={`Add ${title} To Cart`}>Add To Cart</button>
-    <div role={title + "-in-cart"}>{amount}</div>
+    <div data-testid={'test-amount'}>{amount}</div>
   </div>
-});
-*/
+});*/
+
 
 describe('Shop Component', () => {
   it("renders shop", () => {
@@ -26,7 +26,7 @@ describe('Shop Logic', () => {
   it("adds item to cart", () => {
     render(<Shop />);
     const button = screen.getByRole('button', { name: "Add Apple To Cart" });
-    const amount = screen.getByRole('Apple-in-cart');
+    const amount = screen.getByTestId('Apple-test-amount');
     const amountToAdd = screen.getByRole('spinbutton', { name: "Apples to add:"});
     expect(amount.textContent).toBe("0");
 
@@ -37,7 +37,7 @@ describe('Shop Logic', () => {
   it("adds multiple items to cart", () => {
     render(<Shop />);
     const button = screen.getByRole('button', { name: "Add Apple To Cart" });
-    const amount = screen.getByRole('Apple-in-cart');
+    const amount = screen.getByTestId('Apple-test-amount');
     const amountToAdd = screen.getByRole('spinbutton', { name: "Apples to add:"});
     expect(amount.textContent).toBe("0");
 

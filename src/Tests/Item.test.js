@@ -8,16 +8,16 @@ describe('component props', () => {
   it('uses given title and description', () => {
     render(<Item title={"orange"} description={"fruit"} />);
     expect(screen.getByRole('heading').textContent).toMatch("orange");
-    expect(screen.getByRole('orange-description').textContent).toMatch("fruit");
+    expect(screen.getByText(/fruit/)).toBeInTheDocument();
   })
   it('when missing title and description uses defaults', () => {
     render(<Item></Item>);
     expect(screen.getByRole('heading').textContent).toMatch("Missing Title");
-    expect(screen.getByRole("undefined-description").textContent).toMatch("Missing Description");
+    expect(screen.getByText(/Missing Description/)).toBeInTheDocument();
   })
   it('displays amount already in cart', () => {
     render(<Item title={"orange"} description={"fruit"} amount={"4"} />);
-    expect(screen.getByRole('orange-in-cart').textContent).toMatch("4");
+    expect(screen.getByText(/4/)).toBeInTheDocument();
   })
 })
 

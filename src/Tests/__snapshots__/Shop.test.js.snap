@@ -7,12 +7,15 @@ exports[`Shop Component renders shop 1`] = `
       Shop
     </h1>
     <div>
+      <div>
+        Your cart is empty
+      </div>
+    </div>
+    <div>
       <h3>
         Apple
       </h3>
-      <div
-        role="Apple-description"
-      >
+      <div>
         fruit
       </div>
       <form>
@@ -39,7 +42,45 @@ exports[`Shop Component renders shop 1`] = `
       </form>
       <div>
         <span
-          role="Apple-in-cart"
+          data-testid="Apple-test-amount"
+        >
+          0
+        </span>
+         in cart
+      </div>
+    </div>
+    <div>
+      <h3>
+        Orange
+      </h3>
+      <div>
+        fruit
+      </div>
+      <form>
+        <label
+          for="amount-to-add-Orange"
+        >
+          Orange
+          s to add: 
+        </label>
+        <input
+          id="amount-to-add-Orange"
+          max="99"
+          min="0"
+          name="amount-to-add-Orange"
+          type="number"
+          value="1"
+        />
+        <button
+          aria-label="Add Orange To Cart"
+          type="submit"
+        >
+          Add To Cart
+        </button>
+      </form>
+      <div>
+        <span
+          data-testid="Orange-test-amount"
         >
           0
         </span>
