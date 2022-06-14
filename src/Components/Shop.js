@@ -4,9 +4,11 @@ import Item from "./Item";
 const Shop = () => {
   const [cart, setCart] = useState({});
 
-  const addItemToCart = (item, currentAmount) => {
+  const addItemToCart = (item, currentAmount, amountToAdd) => {
+    const parsedCurrentAmount = parseInt(currentAmount);
+    const parsedAmountToAdd = parseInt(amountToAdd);
     setCart(prevState => {
-      return { ...prevState, [item]: (currentAmount + 1)}
+      return { ...prevState, [item]: (parsedCurrentAmount + parsedAmountToAdd)}
     })
   }
 

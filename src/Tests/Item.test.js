@@ -25,7 +25,7 @@ describe('component functions', () => {
   it('fires function when add to cart button pressed', () => {
     const onAddMock = jest.fn();
     render(<Item title={"orange"} description={"fruit"} onAdd={onAddMock} />);
-    const button = screen.getByRole("button", { name: "Add To Cart" });
+    const button = screen.getByRole("button", { name: "Add orange To Cart" });
 
     userEvent.click(button);
 

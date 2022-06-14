@@ -15,15 +15,35 @@ exports[`Shop Component renders shop 1`] = `
       >
         fruit
       </div>
-      <button
-        aria-label="Add Apple To Cart"
-      >
-        Add To Cart
-      </button>
-      <div
-        role="Apple-in-cart"
-      >
-        0
+      <form>
+        <label
+          for="amount-to-add-Apple"
+        >
+          Apple
+          s to add: 
+        </label>
+        <input
+          id="amount-to-add-Apple"
+          max="99"
+          min="0"
+          name="amount-to-add-Apple"
+          type="number"
+          value="1"
+        />
+        <button
+          aria-label="Add Apple To Cart"
+          type="submit"
+        >
+          Add To Cart
+        </button>
+      </form>
+      <div>
+        <span
+          role="Apple-in-cart"
+        >
+          0
+        </span>
+         in cart
       </div>
     </div>
   </div>

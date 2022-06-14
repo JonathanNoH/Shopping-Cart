@@ -27,10 +27,25 @@ describe('Shop Logic', () => {
     render(<Shop />);
     const button = screen.getByRole('button', { name: "Add Apple To Cart" });
     const amount = screen.getByRole('Apple-in-cart');
+    const amountToAdd = screen.getByRole('spinbutton', { name: "Apples to add:"});
     expect(amount.textContent).toBe("0");
 
     userEvent.click(button);
 
-    expect(amount.textContent).toBe("1");
+    expect(amount.textContent).toBe((0 + parseInt(amountToAdd.value)).toString());
+  })
+  it("adds multiple items to cart", () => {
+    render(<Shop />);
+    const button = screen.getByRole('button', { name: "Add Apple To Cart" });
+    const amount = screen.getByRole('Apple-in-cart');
+    const amountToAdd = screen.getByRole('spinbutton', { name: "Apples to add:"});
+    expect(amount.textContent).toBe("0");
+
+    userEvent.type(amountToAdd, "{backspace}12");
+    expect(amountToAdd.value).toBe("12");
+
+    userEvent.click(button);
+
+    expect(amount.textContent).toBe("12");
   })
 })
