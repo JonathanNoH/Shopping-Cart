@@ -1,0 +1,14 @@
+.icon {
+  width: 250px;
+  height: 250px;
+}
+
+header {
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+}
