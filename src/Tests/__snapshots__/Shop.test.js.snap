@@ -2,96 +2,119 @@
 
 exports[`Shop Component renders shop 1`] = `
 <div>
-  <div>
-    <h1>
-      Shop
-    </h1>
+  <div
+    class="App"
+  >
+    <header>
+      <img
+        alt="Jim and Bob's Jellys and Burgers: Get some jelly in your burg"
+        class="icon"
+        src="icon.png"
+      />
+      <nav>
+        <a
+          href="/"
+        >
+          Home
+        </a>
+        <a
+          href="/shop"
+        >
+          Shop
+        </a>
+      </nav>
+    </header>
     <div>
+      <h1>
+        Shop
+      </h1>
       <div>
         <div>
-          <button>
-            Cart
-          </button>
-          <span>
-            (0)
-          </span>
+          <div>
+            <button>
+              Cart
+            </button>
+            <span>
+              (0)
+            </span>
+          </div>
         </div>
       </div>
-    </div>
-    <div>
-      <h3>
-        Apple
-      </h3>
       <div>
-        fruit
-      </div>
-      <form>
-        <label
-          for="amount-to-add-Apple"
-        >
+        <h3>
           Apple
-          s to add: 
-        </label>
-        <input
-          id="amount-to-add-Apple"
-          max="99"
-          min="0"
-          name="amount-to-add-Apple"
-          type="number"
-          value="1"
-        />
-        <button
-          aria-label="Add Apple To Cart"
-          type="submit"
-        >
-          Add To Cart
-        </button>
-      </form>
-      <div>
-        <span
-          data-testid="Apple-test-amount"
-        >
-          0
-        </span>
-         in cart
+        </h3>
+        <div>
+          fruit
+        </div>
+        <form>
+          <label
+            for="amount-to-add-Apple"
+          >
+            Apple
+            s to add: 
+          </label>
+          <input
+            id="amount-to-add-Apple"
+            max="99"
+            min="0"
+            name="amount-to-add-Apple"
+            type="number"
+            value="1"
+          />
+          <button
+            aria-label="Add Apple To Cart"
+            type="submit"
+          >
+            Add To Cart
+          </button>
+        </form>
+        <div>
+          <span
+            data-testid="Apple-test-amount"
+          >
+            0
+          </span>
+           in cart
+        </div>
       </div>
-    </div>
-    <div>
-      <h3>
-        Orange
-      </h3>
       <div>
-        fruit
-      </div>
-      <form>
-        <label
-          for="amount-to-add-Orange"
-        >
+        <h3>
           Orange
-          s to add: 
-        </label>
-        <input
-          id="amount-to-add-Orange"
-          max="99"
-          min="0"
-          name="amount-to-add-Orange"
-          type="number"
-          value="1"
-        />
-        <button
-          aria-label="Add Orange To Cart"
-          type="submit"
-        >
-          Add To Cart
-        </button>
-      </form>
-      <div>
-        <span
-          data-testid="Orange-test-amount"
-        >
-          0
-        </span>
-         in cart
+        </h3>
+        <div>
+          fruit
+        </div>
+        <form>
+          <label
+            for="amount-to-add-Orange"
+          >
+            Orange
+            s to add: 
+          </label>
+          <input
+            id="amount-to-add-Orange"
+            max="99"
+            min="0"
+            name="amount-to-add-Orange"
+            type="number"
+            value="1"
+          />
+          <button
+            aria-label="Add Orange To Cart"
+            type="submit"
+          >
+            Add To Cart
+          </button>
+        </form>
+        <div>
+          <span
+            data-testid="Orange-test-amount"
+          >
+            0
+          </span>
+           in cart
+        </div>
       </div>
     </div>
   </div>
