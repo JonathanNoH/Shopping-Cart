@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import Item from "./Item";
 import Cart from "./Cart";
+import { useOutletContext } from "react-router-dom";
 
 const Shop = () => {
-  const [cart, setCart] = useState({});
+  const [cart, setCart] = useOutletContext();
 
   const addItemToCart = (item, currentAmount, amountToAdd) => {
     const parsedCurrentAmount = parseInt(currentAmount);
