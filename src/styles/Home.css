@@ -5,13 +5,15 @@
   justify-content: start;
   margin-bottom: 5rem;
   min-width: 35ch;
-  max-width: 90ch;
+  max-width: 100ch;
   align-self: center;
 }
 
 .home-description, .testimonial-container {
   place-self: center;
   text-align: center;
+  border: solid 2px var(--main-pink);
+  padding: 0.5rem;
 }
 
 .testimonial-container {
@@ -21,7 +23,7 @@
 }
 
 img {
-  width: 400px;
+  width: 425px;
   object-fit: contain;
   justify-self: center;
 }
