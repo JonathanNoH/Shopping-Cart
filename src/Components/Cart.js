@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const Cart = ({cart}) => {
+const Cart = ({cart, handleRemoveItem}) => {
   const [toggleCartDisplay, setToggleCartDisplay] = useState(false);
   const handleClick = () => {
     setToggleCartDisplay(prevState => !prevState);
@@ -12,6 +12,9 @@ const Cart = ({cart}) => {
     <li key={item[0].toString()}>
       <div>{item[0]}</div>
       <div>{item[1]}</div>
+      <button 
+        onClick={() => {handleRemoveItem(item[0])}}
+        aria-label={`Remove ${item[0]} from cart`}>Remove</button>
     </li>
     )
   })

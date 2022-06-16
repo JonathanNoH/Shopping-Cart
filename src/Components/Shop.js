@@ -14,11 +14,17 @@ const Shop = () => {
     })
   }
 
+  const removeItem = (item) => {
+    let newCart = {...cart};
+    delete newCart[item];
+    setCart(newCart);
+  }
+
   return (
     <div>
       <h1>Shop</h1>
       <div>
-        <Cart cart={cart}/>
+        <Cart cart={cart} handleRemoveItem={removeItem}/>
       </div>
       <Item 
         title="Apple" 
