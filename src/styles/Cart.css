@@ -1,0 +1,16 @@
+.Cart {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 1rem;
+}
+
+.showCart {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.cartItems {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 500px));
+  place-items: start;
+}

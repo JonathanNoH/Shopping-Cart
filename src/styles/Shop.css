@@ -1,0 +1,15 @@
+h1 {
+  color: var(--main-blue);
+  grid-column: 1 / -1;
+  place-self: center;
+}
+
+.Shop {
+  position: relative;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+}

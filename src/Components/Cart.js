@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "../styles/Cart.css";
 
 const Cart = ({cart, handleRemoveItem}) => {
   const [toggleCartDisplay, setToggleCartDisplay] = useState(false);
@@ -24,15 +25,17 @@ const Cart = ({cart, handleRemoveItem}) => {
   );
 
   return (
-    <div>
-      <div>
+    <div className="Cart">
+      <div className="cartItems">
+        {toggleCartDisplay &&
+        ((cartArray.length > 0) ?
+          cartArray : "Your cart is empty")
+        }
+      </div>
+      <div className="showCart">
         <button onClick={handleClick}>Cart</button>
         <span>{"("+ cartTotal +")"}</span>  
       </div>
-      {toggleCartDisplay && 
-      ((cartArray.length > 0) ? 
-        cartArray : "Your cart is empty")
-      }
     </div>
   )
 }
