@@ -2,6 +2,7 @@
   display: grid;
   grid-template-columns: max-content 1fr;
   gap: 1rem;
+  padding: 1rem;
 }
 
 .showCart {
@@ -11,6 +12,6 @@
 
 .cartItems {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 500px));
+  grid-template-columns: repeat(auto-fit, minmax(max-content, 300px));
   place-items: start;
 }

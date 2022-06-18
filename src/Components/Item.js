@@ -1,6 +1,7 @@
 import React, { useState } from "react";
+import '../styles/Item.css';
 
-const Item = ({title, description, amount, onAdd}) => {
+const Item = ({title, description, amount, onAdd, img, imgAlt}) => {
   const [amountToAdd, setAmountToAdd] = useState(1);
   const handleChange = (e) => {
     //guard against copy pasting non numbers and another shenanigans
@@ -16,11 +17,12 @@ const Item = ({title, description, amount, onAdd}) => {
     onAdd(title, amount, amountToAdd);
   }
   return (
-    <div>
+    <div className="Item">
       <h3>{title || "Missing Title"}</h3>
+      <img src={img} alt={imgAlt || 'missing alt'} />
       <div>{description || "Missing Description"}</div>
       <form>
-        <label htmlFor={`amount-to-add-${title}`}>{title}s to add: </label>
+        <label htmlFor={`amount-to-add-${title}`}>{title} to add: </label>
         <input
           type="number"
           min={0}
