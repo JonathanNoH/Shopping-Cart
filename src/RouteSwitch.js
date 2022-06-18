@@ -12,7 +12,7 @@ import Shop from "./Components/Shop";
 const Router = () => {
   
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="https://jonathannoh.github.io/Shopping-Cart/">
       <Routes>
         <Route path="/" element={<App />}>
           <Route index element={<Home />}/>
