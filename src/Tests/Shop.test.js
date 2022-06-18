@@ -6,7 +6,7 @@ import Shop from "../Components/Shop";
 import RouteSwitch from "../RouteSwitch";
 
 // This used to work without rendering everything but I could not figure out how to mock or fix useOutletContext() calls inside Shop when not rendering the Routing
-
+const testObject = {title: 'Marmalade'};
 
 describe('Shop Component', () => {
   it("renders shop", () => {
@@ -24,9 +24,9 @@ describe('Shop Logic', () => {
     const shopButton = screen.getByRole('link', { name: "Shop"});
     userEvent.click(shopButton);
 
-    const button = screen.getByRole('button', { name: "Add Apple To Cart" });
-    const amount = screen.getByTestId('Apple-test-amount');
-    const amountToAdd = screen.getByRole('spinbutton', { name: "Apples to add:"});
+    const button = screen.getByRole('button', { name: `Add ${testObject.title} To Cart` });
+    const amount = screen.getByTestId(`${testObject.title}-test-amount`);
+    const amountToAdd = screen.getByRole('spinbutton', { name: `${testObject.title} to add:`});
     expect(amount.textContent).toBe("0");
 
     userEvent.click(button);
@@ -37,9 +37,9 @@ describe('Shop Logic', () => {
     render(<RouteSwitch />);
     const shopButton = screen.getByRole('link', { name: "Shop"});
     userEvent.click(shopButton);
-    const button = screen.getByRole('button', { name: "Add Apple To Cart" });
-    const amount = screen.getByTestId('Apple-test-amount');
-    const amountToAdd = screen.getByRole('spinbutton', { name: "Apples to add:"});
+    const button = screen.getByRole('button', { name: `Add ${testObject.title} To Cart` });
+    const amount = screen.getByTestId(`${testObject.title}-test-amount`);
+    const amountToAdd = screen.getByRole('spinbutton', { name: `${testObject.title} to add:`});
     expect(amount.textContent).toBe("0");
 
     userEvent.type(amountToAdd, "{backspace}12");
@@ -54,9 +54,9 @@ describe('Shop Logic', () => {
     const shopButton = screen.getByRole('link', { name: "Shop"});
     userEvent.click(shopButton);
 
-    const button = screen.getByRole('button', { name: "Add Apple To Cart" });
-    const amount = screen.getByTestId('Apple-test-amount');
-    const amountToAdd = screen.getByRole('spinbutton', { name: "Apples to add:"});
+    const button = screen.getByRole('button', { name: `Add ${testObject.title} To Cart` });
+    const amount = screen.getByTestId(`${testObject.title}-test-amount`);
+    const amountToAdd = screen.getByRole('spinbutton', { name: `${testObject.title} to add:`});
 
     expect(amount.textContent).toBe("0");
     userEvent.click(button);
@@ -64,7 +64,7 @@ describe('Shop Logic', () => {
 
     const cartButton = screen.getByRole('button', { name: 'Cart'});
     userEvent.click(cartButton);
-    const removeButton = screen.getByRole('button', { name: "Remove Apple from cart" })
+    const removeButton = screen.getByRole('button', { name: `Remove ${testObject.title} from cart` })
 
     userEvent.click(removeButton);
     expect(amount.textContent).toBe("0");

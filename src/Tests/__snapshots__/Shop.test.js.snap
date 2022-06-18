@@ -24,96 +24,251 @@ exports[`Shop Component renders shop 1`] = `
         </a>
       </nav>
     </header>
-    <div>
-      <h1>
-        Shop
-      </h1>
-      <div>
-        <div>
+    <div
+      class="Shop"
+    >
+      <div
+        class="Cart"
+      >
+        <div
+          class="cartItems"
+        />
+        <div
+          class="showCart"
+        >
+          <button>
+            Cart
+          </button>
+          <span>
+            (0)
+          </span>
+        </div>
+      </div>
+      <div
+        class="container"
+      >
+        <h1>
+          Shop
+        </h1>
+        <div
+          class="Item"
+        >
+          <h3>
+            Frozen Burger Patties
+          </h3>
+          <img
+            alt="Burger Patties"
+            src="burger-patties-pexels-jonathan-borba.jpg"
+          />
           <div>
-            <button>
-              Cart
+            Our classic burger patties frozen and sent right to you. Packs of 4.
+          </div>
+          <form>
+            <label
+              for="amount-to-add-Frozen Burger Patties"
+            >
+              Frozen Burger Patties
+               to add: 
+            </label>
+            <input
+              id="amount-to-add-Frozen Burger Patties"
+              max="99"
+              min="0"
+              name="amount-to-add-Frozen Burger Patties"
+              type="number"
+              value="1"
+            />
+            <button
+              aria-label="Add Frozen Burger Patties To Cart"
+              type="submit"
+            >
+              Add To Cart
             </button>
-            <span>
-              (0)
+          </form>
+          <div>
+            <span
+              data-testid="Frozen Burger Patties-test-amount"
+            >
+              0
             </span>
+             in cart
           </div>
         </div>
-      </div>
-      <div>
-        <h3>
-          Apple
-        </h3>
-        <div>
-          fruit
-        </div>
-        <form>
-          <label
-            for="amount-to-add-Apple"
-          >
-            Apple
-            s to add: 
-          </label>
-          <input
-            id="amount-to-add-Apple"
-            max="99"
-            min="0"
-            name="amount-to-add-Apple"
-            type="number"
-            value="1"
+        <div
+          class="Item"
+        >
+          <h3>
+            Marmalade
+          </h3>
+          <img
+            alt="Marmalade"
+            src="marmalade-pexels-geraud-pfeiffer.jpg"
           />
-          <button
-            aria-label="Add Apple To Cart"
-            type="submit"
-          >
-            Add To Cart
-          </button>
-        </form>
-        <div>
-          <span
-            data-testid="Apple-test-amount"
-          >
-            0
-          </span>
-           in cart
+          <div>
+            Fresh Marmalade using secret recipe.
+          </div>
+          <form>
+            <label
+              for="amount-to-add-Marmalade"
+            >
+              Marmalade
+               to add: 
+            </label>
+            <input
+              id="amount-to-add-Marmalade"
+              max="99"
+              min="0"
+              name="amount-to-add-Marmalade"
+              type="number"
+              value="1"
+            />
+            <button
+              aria-label="Add Marmalade To Cart"
+              type="submit"
+            >
+              Add To Cart
+            </button>
+          </form>
+          <div>
+            <span
+              data-testid="Marmalade-test-amount"
+            >
+              0
+            </span>
+             in cart
+          </div>
         </div>
-      </div>
-      <div>
-        <h3>
-          Orange
-        </h3>
-        <div>
-          fruit
-        </div>
-        <form>
-          <label
-            for="amount-to-add-Orange"
-          >
-            Orange
-            s to add: 
-          </label>
-          <input
-            id="amount-to-add-Orange"
-            max="99"
-            min="0"
-            name="amount-to-add-Orange"
-            type="number"
-            value="1"
+        <div
+          class="Item"
+        >
+          <h3>
+            Blueberry Jelly
+          </h3>
+          <img
+            alt="Blueberry Jelly"
+            src="blueberry-jam-pexels-karolina-grabowska.jpg"
           />
-          <button
-            aria-label="Add Orange To Cart"
-            type="submit"
-          >
-            Add To Cart
-          </button>
-        </form>
-        <div>
-          <span
-            data-testid="Orange-test-amount"
-          >
-            0
-          </span>
-           in cart
+          <div>
+            Delectable blueberries picked locally.
+          </div>
+          <form>
+            <label
+              for="amount-to-add-Blueberry Jelly"
+            >
+              Blueberry Jelly
+               to add: 
+            </label>
+            <input
+              id="amount-to-add-Blueberry Jelly"
+              max="99"
+              min="0"
+              name="amount-to-add-Blueberry Jelly"
+              type="number"
+              value="1"
+            />
+            <button
+              aria-label="Add Blueberry Jelly To Cart"
+              type="submit"
+            >
+              Add To Cart
+            </button>
+          </form>
+          <div>
+            <span
+              data-testid="Blueberry Jelly-test-amount"
+            >
+              0
+            </span>
+             in cart
+          </div>
+        </div>
+        <div
+          class="Item"
+        >
+          <h3>
+            Strawberry Jelly
+          </h3>
+          <img
+            alt="Strawberry Jelly"
+            src="strawberry-jam-pexels-markus-spiske.jpg"
+          />
+          <div>
+            Only the ripest of strawberries, pureed to perfection.
+          </div>
+          <form>
+            <label
+              for="amount-to-add-Strawberry Jelly"
+            >
+              Strawberry Jelly
+               to add: 
+            </label>
+            <input
+              id="amount-to-add-Strawberry Jelly"
+              max="99"
+              min="0"
+              name="amount-to-add-Strawberry Jelly"
+              type="number"
+              value="1"
+            />
+            <button
+              aria-label="Add Strawberry Jelly To Cart"
+              type="submit"
+            >
+              Add To Cart
+            </button>
+          </form>
+          <div>
+            <span
+              data-testid="Strawberry Jelly-test-amount"
+            >
+              0
+            </span>
+             in cart
+          </div>
+        </div>
+        <div
+          class="Item"
+        >
+          <h3>
+            Raspberry Jelly
+          </h3>
+          <img
+            alt="Raspberry Jelly"
+            src="raspberry-jam-pexels-cottonbro.jpg"
+          />
+          <div>
+            Pretty much normal raspberry jelly.
+          </div>
+          <form>
+            <label
+              for="amount-to-add-Raspberry Jelly"
+            >
+              Raspberry Jelly
+               to add: 
+            </label>
+            <input
+              id="amount-to-add-Raspberry Jelly"
+              max="99"
+              min="0"
+              name="amount-to-add-Raspberry Jelly"
+              type="number"
+              value="1"
+            />
+            <button
+              aria-label="Add Raspberry Jelly To Cart"
+              type="submit"
+            >
+              Add To Cart
+            </button>
+          </form>
+          <div>
+            <span
+              data-testid="Raspberry Jelly-test-amount"
+            >
+              0
+            </span>
+             in cart
+          </div>
         </div>
       </div>
     </div>

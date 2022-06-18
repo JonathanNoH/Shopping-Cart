@@ -12,6 +12,14 @@
 
 .cartItems {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(max-content, 300px));
+  grid-template-columns: repeat(auto-fit, minmax(max-content, 250px));
   place-items: start;
+  padding: 0 1rem;
+  gap: 1rem;
+}
+
+.cartItems > li {
+  background-color: var(--grey);
+  padding: 1rem 1.5rem;
+  list-style: none;
 }
