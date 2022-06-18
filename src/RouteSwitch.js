@@ -1,6 +1,6 @@
 import React from "react";
 import {
-  BrowserRouter,
+  HashRouter,
   Routes,
   Route
 } from "react-router-dom";
@@ -12,14 +12,14 @@ import Shop from "./Components/Shop";
 const Router = () => {
   
   return (
-    <BrowserRouter basename="">
+    <HashRouter basename="">
       <Routes>
         <Route path="/" element={<App />}>
           <Route index element={<Home />}/>
           <Route path="shop" element={<Shop />}/>
         </Route>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 
