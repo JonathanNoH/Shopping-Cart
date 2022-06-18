@@ -12,7 +12,7 @@ import Shop from "./Components/Shop";
 const Router = () => {
   
   return (
-    <BrowserRouter basename="/">
+    <BrowserRouter basename="">
       <Routes>
         <Route path="/" element={<App />}>
           <Route index element={<Home />}/>
