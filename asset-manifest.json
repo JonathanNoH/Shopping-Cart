@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/Shopping-Cart/static/css/main.5f80a508.css",
+    "main.js": "/Shopping-Cart/static/js/main.bedf1629.js",
+    "static/media/diner-pexels-igor-starkov.jpg": "/Shopping-Cart/static/media/diner-pexels-igor-starkov.aa2400468dc21386c8bf.jpg",
+    "static/media/diner-food-pexels-chokniti-khongchum.jpg": "/Shopping-Cart/static/media/diner-food-pexels-chokniti-khongchum.4b7856ba9e446f276d0b.jpg",
+    "static/media/blueberry-jam-pexels-karolina-grabowska.jpg": "/Shopping-Cart/static/media/blueberry-jam-pexels-karolina-grabowska.d476db6c718e793540f9.jpg",
+    "static/media/burger-patties-pexels-jonathan-borba.jpg": "/Shopping-Cart/static/media/burger-patties-pexels-jonathan-borba.5ab513cfcf2e6cb2aff0.jpg",
+    "static/media/icon.png": "/Shopping-Cart/static/media/icon.dc80b49438d27c21d24c.png",
+    "static/media/marmalade-pexels-geraud-pfeiffer.jpg": "/Shopping-Cart/static/media/marmalade-pexels-geraud-pfeiffer.a8c985b50471f3ee20f9.jpg",
+    "static/media/raspberry-jam-pexels-cottonbro.jpg": "/Shopping-Cart/static/media/raspberry-jam-pexels-cottonbro.aa8273977ac013da4c00.jpg",
+    "static/media/raleway-variablefont_wght-webfont.woff": "/Shopping-Cart/static/media/raleway-variablefont_wght-webfont.232c98ea40cb0c997d27.woff",
+    "static/media/strawberry-jam-pexels-markus-spiske.jpg": "/Shopping-Cart/static/media/strawberry-jam-pexels-markus-spiske.6246b2b8dcc2704da31f.jpg",
+    "static/media/raleway-variablefont_wght-webfont.woff2": "/Shopping-Cart/static/media/raleway-variablefont_wght-webfont.e3a1bf0d85a1c9d49988.woff2",
+    "index.html": "/Shopping-Cart/index.html",
+    "main.5f80a508.css.map": "/Shopping-Cart/static/css/main.5f80a508.css.map",
+    "main.bedf1629.js.map": "/Shopping-Cart/static/js/main.bedf1629.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5f80a508.css",
+    "static/js/main.bedf1629.js"
+  ]
+}
