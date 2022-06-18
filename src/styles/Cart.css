@@ -22,4 +22,5 @@
   background-color: var(--grey);
   padding: 1rem 1.5rem;
   list-style: none;
+  border: 2px solid var(--main-pink);
 }
